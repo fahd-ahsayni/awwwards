@@ -1,0 +1,140 @@
+:root {
+  --font-mazius: "Mazius";
+  --font-gilory: "Gilory";
+  --font-gilory-extra: "Gilory-extra";
+  --secondary-color: #ff6a00;
+  --primary-color: #111;
+  --bg-color: #dadada;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilory";
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main_a {
+  width: 100%;
+}
+
+#main_a > #loader {
+
+  width: 100%;
+  height: 100vh;
+  background: var(--primary-color);
+  color: white;
+}
+
+#loader > #loader_heading {
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#loader > #loader_heading > h5 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+#loader > h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4vw;
+}
+
+#mazius {
+  font-family: var(--font-mazius);
+  color: var(--secondary-color);
+}
+
+.reveal > .parent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.reveal > .parent > .child {
+  display: block;
+  transform: translateY(0%);
+}
+
+.parent > .child > span {
+  display: inline-block;
+}
+
+#main_a > #green {
+ 
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 0vh;
+  background: #14cf93;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  width: 100%;
+  height: 100px;
+}
+
+#nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  color: #000;
+  position: relative;
+}
+
+#nav > a > .line {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  height: 1px;
+  background: #000;
+}
+#line1 {
+  left: 0;
+  width: 0%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  transition-delay: 0.1s;
+}
+#line2 {
+  width: 100%;
+  right: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#nav > a:hover > #line1 {
+  width: 100%;
+}
+
+#nav > a:hover > #line2 {
+  width: 0%;
+}
