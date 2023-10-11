@@ -1,0 +1,52 @@
+:root {
+  --font-mazius: "Mazius";
+  --font-gilory: "Gilory";
+  --font-gilory-extra: "Gilory-extra";
+  --secondary-color: #ff6a00;
+  --primary-color: #111;
+  --bg-color: #dadada;
+  --text-color: #333;
+}
+
+#imagery {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 7vw;
+  display: flex;
+  margin-top: 18vw;
+}
+
+#imagery > #image_left {
+  width: 30%;
+  height: auto;
+}
+
+#image_left > h1 {
+  font-weight: 600;
+  font-size: 2vw;
+  color: var(--text-color);
+}
+
+#image_left > h1 > span {
+  color: var(--secondary-color);
+  font-family: var(--font-mazius);
+  font-weight: 100;
+  font-style: italic;
+}
+
+#image_right {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 60%;
+  height: auto;
+  background: yellow;
+    width: 100%;
+
+#image_right > .images {
+  width: 30vw;
+  height: 45vw;
+  border-radius: 1vw;
+  background: #000;
+}
