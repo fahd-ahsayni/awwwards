@@ -9,21 +9,10 @@
 }
 
 #works {
-  padding-top: 250px;
+  top: 30vw;
   width: 100%;
   min-height: 70vh;
-  background: #000;
-}
-
-#works::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 150px;
-  top: -75px;
-  z-index: 1;
-  transform: rotate(-180deg);
-  background-size: cover;
+  position: relative;
 }
 
 #works > .works_row {
@@ -38,9 +27,9 @@
 }
 
 #images_works {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7vw;
   margin-top: 6vw;
   position: relative;
   width: 100%;
@@ -49,7 +38,17 @@
 
 #images_works > .cnt {
   overflow: hidden;
-  border-radius: 50px;
+  position: relative;
+}
+
+.cnt > span {
+  position: absolute;
+  font-size: 5vw;
+  z-index: 999;
+  left: 2vw;
+  top: 2vw;
+  font-family: var(--font-gilory-extra);
+  mix-blend-mode: difference;
 }
 
 .cnt > img {
@@ -58,19 +57,12 @@
   width: 100%;
 }
 
-.cnt1 {
-  width: 40%;
-}
-.cnt2 {
-  width: 30%;
-}
-
 #cursor {
   position: fixed;
   width: 27vw;
   top: 0;
   left: 0;
-  z-index: 99999;
+  z-index: 999;
 }
 
 #cursor > div {

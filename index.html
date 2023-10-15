@@ -5,18 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Arkx Talent Factory</title>
-    <!-- <link rel="stylesheet" href="assets/config/locomotive-scroll.css"> -->
-    <link rel="stylesheet" href="assets/helpers/css/splitting-cells.css">
-    <link rel="stylesheet" href="assets/helpers/css/splitting.css">
-    <link rel="stylesheet" href="assets/styles/main-a.css">
-    <link rel="stylesheet" href="assets/styles/main-a-imagery.css">
-    <link rel="stylesheet" href="assets/styles/main-a-works.css">
     <style>
         @font-face {
             font-family: 'Gilory-extra';
             src: url('./public/font/Gilroy-ExtraBold.otf') format('opentype');
-            font-weight: normal;
+            <script src="./assets/helpers/js/splide-extension-auto-scroll.min.js"></script>font-weight: normal;
             font-style: normal;
         }
 
@@ -34,10 +29,23 @@
             font-style: normal;
         }
     </style>
+   <!--! splide -->
+   <script src="./assets/helpers/js/splide.min.js"></script>
+   <script src="./assets/helpers/js/splide-extension-auto-scroll.min.js"></script>
+   <link href="./assets/helpers/css/splide.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/styles/splide.css">
+
+    <!-- <link rel="stylesheet" href="assets/config/locomotive-scroll.css"> -->
+    <link rel="stylesheet" href="assets/styles/main-a.css">
+    <link rel="stylesheet" href="assets/styles/main-a-imagery.css">
+    <link rel="stylesheet" href="assets/styles/main-a-works.css">
+
 </head>
 
 <body>
-   
+
+    <div id="background"></div>
     <div id="main_a">
         <div id="loader">
             <div id="loader_heading">
@@ -50,9 +58,9 @@
             </h1>
         </div>
         <div id="green"></div>
-        <div id="home">          
-            <div id="background">
-                <div class="styling_one"></div>
+        <div id="home">
+            <div id="background_header">
+                <div class="galaxy"></div>
             </div>
             <nav id="nav">
                 <a href="">
@@ -78,37 +86,22 @@
             </nav>
             <div style="padding-top: 7vw;" class="row">
                 <h2 class="reveal">Unleash Africa'<span class="mazius">s</span></h2>
-                <!-- <div class="text">
-                    <div id="picture">
-                        <img src="public/picture/hamzaPicture.webp" alt="">
-                    </div>
-                    <div id="message">
-                        <h5 class="reveal name">HAMZA DEBRAH - CEO</h5>
-                        <h5 class="reveal">Lorem ipsum dolor sit amet.</h5>
-                    </div>
-                </div> -->
-                <!-- <di class="text">
-                    <div id="picture">
-                        <img src="public/picture/abdelazizPicture.webp" alt="">
-                    </div>
-                    <div id="message">
-                        <h5 class="reveal name">ABDELAZIZ BELKOURE - CTO</h5>
-                        <h5 class="reveal">Lorem ipsum dolor sit amet.</h5>
-                    </div>
-                </di> -->
             </div>
             <div class="row">
                 <div id="rocket">
                     <img src="public/svg/rocket.svg" alt="arkx rocket">
                 </div>
-                <div id="line_header"></div>
-                <h2 id="tech">Tech</h2>
+
+                <h2 id="tech">
+                    <div id="line_header"></div>
+                    <span id="text">Tech</span>
+                </h2>
                 <h2 class="reveal">Potentiel</h2>
             </div>
-            <div id="imagery">
-                <h2>About <span class="mazius">Ark-x</span></h2>
+            <div id="about">
+                <h2 id="title_section">About <span class="mazius">Ark-x</span></h2>
                 <div>
-                    <div id="image_left">
+                    <div id="about_left">
                         <p>
                             Lorem ipsum dolor sit amet <span>consectetur adipisicing</span> elit. Natus officiis
                             repellat
@@ -118,16 +111,33 @@
                             harum quis veniam.
                         </p>
                     </div>
-                    <div id="image_right">
-                        <div class="images">
+                    <div id="about_right">
+                        <div id="image1" class="images">
 
                         </div>
-                        <div class="images">
+                        <div id="image2" class="images">
 
                         </div>
-                        <div class="images">
+                        <div id="image3" class="images">
 
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div id="partners">
+                <div class="splide">
+                    <div class="splide__track splide__track-3 ">
+                        <ul class="splide__list">
+                            <li class="splide__slide">Sample</li>
+                            <li class="splide__slide">Text</li>
+                            <li class="splide__slide"><img src="./public/svg/shape1.svg" alt=""></li>
+                            <li class="splide__slide">Sample</li>
+                            <li class="splide__slide">Text</li>
+                            <li class="splide__slide"><img src="./public/svg/shape1.svg" alt=""></li>
+                            <li class="splide__slide">Sample</li>
+                            <li class="splide__slide">Text</li>
+                            <li class="splide__slide"><img src="./public/svg/shape1.svg" alt=""></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -136,14 +146,28 @@
                     <h2>Arkadians <span class="mazius">Works</span></h2>
                 </div>
                 <div id="images_works">
-                    <div class="cnt cnt1">
-                        <img data-index="0" data-scroll data-scroll-speed="-1.5"
+                    <div class="cnt" data-speed="-300">
+                        <span class="work_num" data-speed="-1000">/001</span>
+                        <img data-index="0"
                             src="https://cdn.dribbble.com/users/2146089/screenshots/15467271/media/181640497b86e27e3fe9b8c0726cab7a.png"
                             alt="">
                     </div>
-                    <div class="cnt cnt2">
-                        <img data-index="1" data-scroll data-scroll-speed="-1.5"
+                    <div class="cnt" data-speed="-600">
+                        <span class="work_num" data-speed="-500">/002</span>
+                        <img data-index="1"
                             src="https://cdn.dribbble.com/userupload/7064269/file/original-716cbd71be1c863bc1769b5e1ddc5d80.png?resize=1600x1200"
+                            alt="">
+                    </div>
+                    <div class="cnt" data-speed="-700">
+                        <span class="work_num" data-speed="-700">/003</span>
+                        <img data-index="2" data-scroll data-scroll-speed="-1.5"
+                            src="https://cdn.dribbble.com/users/254977/screenshots/16396090/media/1a9f0f158b0751cc13ae91c4c52a0e58.jpg?resize=1000x750&vertical=center"
+                            alt="">
+                    </div>
+                    <div class="cnt" data-speed="-400">
+                        <span class="work_num" data-speed="-200">/003</span>
+                        <img data-index="3" data-scroll data-scroll-speed="-1.5"
+                            src="https://cdn.dribbble.com/users/1103421/screenshots/15654916/media/29157e4ae076df3568bf46ae7399bd0e.png"
                             alt="">
                     </div>
                 </div>
@@ -166,7 +190,6 @@
                         </div>
                     </div>
                     <!--! pointer image two -->
-
                     <div>
                         <div class="crow">
                             <div class="ccircle"></div>
@@ -183,20 +206,41 @@
                                 alt="">
                         </div>
                     </div>
+                    <!--! pointer image three -->
+                    <div>
+                        <div class="crow">
+                            <div class="ccircle"></div>
+                            <div class="ccapsule">
+                                Behance
+                            </div>
+                        </div>
+                        <div id="elem">
+                            <img src="https://cdn.dribbble.com/users/187214/screenshots/3824573/dribbble_careers.png"
+                                alt="">
+                            <img src="https://cdn.dribbble.com/userupload/3926168/file/original-df1bc33143f18db4ac9334f5979f67cc.png?resize=1600x1200"
+                                alt="">
+                            <img src="https://cdn.dribbble.com/userupload/3926165/file/original-309f3c3b5fe24921af6445c7a8b8b5d7.png?resize=1600x1200"
+                                alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 
 
     <img class="noise" src="public/svg/grainy.svg" alt="">
 
-    <script src="assets/helpers/js/splitting.min.js"></script>
+
+
+
+    <!-- <script src="assets/helpers/js/splitting.min.js"></script> -->
     <script src="assets/helpers/js/gsap.min.js"></script>
     <script src="assets//helpers/js/ScrollTrigger.min.js"></script>
     <!-- <script src="assets/config/locomotive-scroll.min.js"></script> -->
     <script src="assets/javascript/main.js"></script>
-
+    <script src="assets/javascript/splide.js"></script>
 </body>
 
 </html>
