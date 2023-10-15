@@ -1,0 +1,99 @@
+:root {
+  --font-mazius: "Mazius";
+  --font-gilory: "Gilory";
+  --font-gilory-extra: "Gilory-extra";
+  --secondary-color: #fe6a00;
+  --primary-color: #eee;
+  --bg-color: #333;
+  --text-color: #fff;
+}
+
+#imagery {
+  margin-top: 14vw;
+  width: 100%;
+  padding: 0 7vw;
+  z-index: 0;
+  position: relative;
+  background: #000;
+}
+
+#imagery > h2 {
+  font-size: 5vw;
+  margin-bottom: 7vw;
+}
+
+#imagery > div {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#image_left {
+  width: 30%;
+  height: auto;
+}
+
+#image_left > p {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.8vw;
+  color: #eee;
+}
+
+#image_left > p > span {
+  color: var(--secondary-color);
+  font-family: var(--font-mazius);
+  font-weight: 100;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+#image_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 60%;
+  height: auto;
+  height: 100%;
+  margin-right: -4vw;
+}
+
+#image_right > .images {
+  position: absolute;
+  width: 20vw;
+  height: 25vw;
+  border-radius: 1vw;
+  filter: grayscale();
+  cursor: pointer;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+}
+
+#image_right > .images:hover {
+  filter: grayscale(0);
+}
+
+#image_right > .images:nth-child(1) {
+  transform: translate(-40%, -8%)  rotate(-20deg);
+  z-index: 0;
+  background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+  background-size: cover;
+  background-position: center;
+}
+#image_right > .images:nth-child(2) {
+  transform: translate(-15%, 0%)  rotate(-15deg);
+  z-index: 0;
+  background-image: url(https://images.unsplash.com/photo-1618052475596-a04aeafcb476?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80);
+  background-size: cover;
+  background-position: center;
+
+}
+#image_right > .images:nth-child(3) {
+  transform: translate(20%, 10%)  rotate(-5deg);
+  z-index: 0;
+  background-image: url(https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80);
+  background-size: cover;
+  background-position: center;
+}

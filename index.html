@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arkx Talent Factory</title>
-    <link rel="stylesheet" href="assets/css/main-a.css">
-    <link rel="stylesheet" href="assets/css/main-a-imagery.css">
+    <!-- <link rel="stylesheet" href="assets/config/locomotive-scroll.css"> -->
+    <link rel="stylesheet" href="assets/helpers/css/splitting-cells.css">
+    <link rel="stylesheet" href="assets/helpers/css/splitting.css">
+    <link rel="stylesheet" href="assets/styles/main-a.css">
+    <link rel="stylesheet" href="assets/styles/main-a-imagery.css">
+    <link rel="stylesheet" href="assets/styles/main-a-works.css">
     <style>
         @font-face {
             font-family: 'Gilory-extra';
@@ -33,7 +37,7 @@
 </head>
 
 <body>
-
+   
     <div id="main_a">
         <div id="loader">
             <div id="loader_heading">
@@ -41,15 +45,18 @@
                 <h5 class="reveal">&copy; 2022</h5>
             </div>
             <h1 class="reveal">
-                <span>ark-</span><span id="mazius">X</span> <span>into</span> <span>the</span> <span
-                    id="mazius">Future</span>
+                <span>ark-</span><span class="mazius">X</span> <span>into</span> <span>the</span> <span
+                    class="mazius">Future</span>
             </h1>
         </div>
         <div id="green"></div>
-        <div id="home">
+        <div id="home">          
+            <div id="background">
+                <div class="styling_one"></div>
+            </div>
             <nav id="nav">
                 <a href="">
-                    <span>Arkx Talent Factory</span>
+                    <span><img src="public/picture/arkxAcademy.png" alt="arkx academy" id="logo_arkx"></span>
                     <span class="line" id="line1"></span>
                     <span class="line" id="line2"></span>
                 </a>
@@ -69,9 +76,9 @@
                     <span class="line" id="line2"></span>
                 </a>
             </nav>
-            <div class="row">
-                <h2 class="reveal">Unleash</h2>
-                <div class="text">
+            <div style="padding-top: 7vw;" class="row">
+                <h2 class="reveal">Unleash Africa'<span class="mazius">s</span></h2>
+                <!-- <div class="text">
                     <div id="picture">
                         <img src="public/picture/hamzaPicture.webp" alt="">
                     </div>
@@ -79,8 +86,8 @@
                         <h5 class="reveal name">HAMZA DEBRAH - CEO</h5>
                         <h5 class="reveal">Lorem ipsum dolor sit amet.</h5>
                     </div>
-                </div>
-                <di class="text">
+                </div> -->
+                <!-- <di class="text">
                     <div id="picture">
                         <img src="public/picture/abdelazizPicture.webp" alt="">
                     </div>
@@ -88,34 +95,93 @@
                         <h5 class="reveal name">ABDELAZIZ BELKOURE - CTO</h5>
                         <h5 class="reveal">Lorem ipsum dolor sit amet.</h5>
                     </div>
-                </di>
+                </di> -->
             </div>
             <div class="row">
                 <div id="rocket">
                     <img src="public/svg/rocket.svg" alt="arkx rocket">
                 </div>
+                <div id="line_header"></div>
                 <h2 id="tech">Tech</h2>
                 <h2 class="reveal">Potentiel</h2>
             </div>
             <div id="imagery">
-                <div id="image_left">
-                    <h1>
-                        Lorem ipsum dolor sit amet <span>consectetur adipisicing</span> elit. Natus officiis repellat
-                        iure consequuntur
-                        voluptatibus placeat sequi. Autem sapiente dicta id sunt culpa ipsum nesciunt! Deserunt nisi
-                        vitae
-                        harum quis veniam.
-                    </h1>
+                <h2>About <span class="mazius">Ark-x</span></h2>
+                <div>
+                    <div id="image_left">
+                        <p>
+                            Lorem ipsum dolor sit amet <span>consectetur adipisicing</span> elit. Natus officiis
+                            repellat
+                            iure consequuntur
+                            voluptatibus placeat sequi. Autem sapiente dicta id sunt culpa ipsum nesciunt! Deserunt nisi
+                            vitae
+                            harum quis veniam.
+                        </p>
+                    </div>
+                    <div id="image_right">
+                        <div class="images">
+
+                        </div>
+                        <div class="images">
+
+                        </div>
+                        <div class="images">
+
+                        </div>
+                    </div>
                 </div>
-                <div id="image_right">
-                    <div class="images">
-
+            </div>
+            <div id="works">
+                <div class="works_row">
+                    <h2>Arkadians <span class="mazius">Works</span></h2>
+                </div>
+                <div id="images_works">
+                    <div class="cnt cnt1">
+                        <img data-index="0" data-scroll data-scroll-speed="-1.5"
+                            src="https://cdn.dribbble.com/users/2146089/screenshots/15467271/media/181640497b86e27e3fe9b8c0726cab7a.png"
+                            alt="">
                     </div>
-                    <div class="images">
-
+                    <div class="cnt cnt2">
+                        <img data-index="1" data-scroll data-scroll-speed="-1.5"
+                            src="https://cdn.dribbble.com/userupload/7064269/file/original-716cbd71be1c863bc1769b5e1ddc5d80.png?resize=1600x1200"
+                            alt="">
                     </div>
-                    <div class="images">
+                </div>
+                <div id="cursor">
+                    <!--! pointer image one -->
+                    <div>
+                        <div class="crow">
+                            <div class="ccircle"></div>
+                            <div class="ccapsule">
+                                Behance
+                            </div>
+                        </div>
+                        <div id="elem">
+                            <img src="https://cdn.dribbble.com/userupload/3926164/file/original-54b93c8183877edb1adfa144486e262e.png?resize=1024x768"
+                                alt="">
+                            <img src="https://cdn.dribbble.com/userupload/3926168/file/original-df1bc33143f18db4ac9334f5979f67cc.png?resize=1600x1200"
+                                alt="">
+                            <img src="https://cdn.dribbble.com/userupload/3926165/file/original-309f3c3b5fe24921af6445c7a8b8b5d7.png?resize=1600x1200"
+                                alt="">
+                        </div>
+                    </div>
+                    <!--! pointer image two -->
 
+                    <div>
+                        <div class="crow">
+                            <div class="ccircle"></div>
+                            <div class="ccapsule">
+                                Behance
+                            </div>
+                        </div>
+                        <div id="elem">
+                            <img src="https://cdn.dribbble.com/userupload/9146566/file/original-924c7fc74397c73c7d7679d6ea3a674d.png?resize=1600x1200"
+                                alt="">
+                            <img src="https://cdn.dribbble.com/userupload/3926168/file/original-df1bc33143f18db4ac9334f5979f67cc.png?resize=1600x1200"
+                                alt="">
+                            <img src="https://cdn.dribbble.com/userupload/3926165/file/original-309f3c3b5fe24921af6445c7a8b8b5d7.png?resize=1600x1200"
+                                alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,10 +189,13 @@
     </div>
 
 
+    <img class="noise" src="public/svg/grainy.svg" alt="">
 
-    <script src="assets/config/gsap.min.js"></script>
-    <script src="assets//config/ScrollTrigger.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/helpers/js/splitting.min.js"></script>
+    <script src="assets/helpers/js/gsap.min.js"></script>
+    <script src="assets//helpers/js/ScrollTrigger.min.js"></script>
+    <!-- <script src="assets/config/locomotive-scroll.min.js"></script> -->
+    <script src="assets/javascript/main.js"></script>
 
 </body>
 

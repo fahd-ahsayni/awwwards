@@ -1,0 +1,160 @@
+:root {
+  --font-mazius: "Mazius";
+  --font-gilory: "Gilory";
+  --font-gilory-extra: "Gilory-extra";
+  --secondary-color: #fe6a00;
+  --primary-color: #111;
+  --bg-color: #dadada;
+  --text-color: #333;
+}
+
+#works {
+  padding-top: 250px;
+  width: 100%;
+  min-height: 70vh;
+  background: #000;
+}
+
+#works::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: -75px;
+  z-index: 1;
+  transform: rotate(-180deg);
+  background-size: cover;
+}
+
+#works > .works_row {
+  padding: 0 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.works_row > h2 {
+  font-size: 4vw;
+}
+
+#images_works {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 6vw;
+  position: relative;
+  width: 100%;
+  padding: 0 5vw;
+}
+
+#images_works > .cnt {
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.cnt > img {
+  cursor: none;
+  transition: filter cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  width: 100%;
+}
+
+.cnt1 {
+  width: 40%;
+}
+.cnt2 {
+  width: 30%;
+}
+
+#cursor {
+  position: fixed;
+  width: 27vw;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+#cursor > div {
+  pointer-events: none;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  opacity: 0;
+  position: absolute;
+}
+
+#elem {
+  width: 180%;
+  position: relative;
+  top: -3vw;
+}
+
+#cursor .crow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding: 0.7vw;
+  height: 200px;
+}
+
+.crow .ccircle {
+  width: 1vw;
+  height: 1vw;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.crow .ccapsule {
+  padding: 0.7vw 2vw;
+  border-radius: 100px;
+  background: #fff;
+  color: #333;
+}
+
+#elem img {
+  pointer-events: none;
+  cursor: none;
+  width: 100%;
+  border-radius: 1vw;
+  /* opacity: 0; */
+  animation: an 4s linear infinite;
+  position: absolute;
+}
+
+#elem img:nth-child(2) {
+  animation-delay: 1s;
+}
+
+#elem img:nth-child(3) {
+  animation-delay: 2s;
+}
+
+#elem img:nth-child(4) {
+  animation-delay: 3s;
+}
+
+#elem img:nth-child(5) {
+  animation-delay: 4s;
+}
+
+@keyframes an {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  21% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
