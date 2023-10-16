@@ -9,21 +9,31 @@
 }
 
 #works {
-  top: 30vw;
+  top: 15vw;
+  padding-top: 12vw;
   width: 100%;
   min-height: 70vh;
   position: relative;
+  overflow: hidden;
 }
 
 #works > .works_row {
   padding: 0 7vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
+  position: relative;
 }
 
 .works_row > h2 {
-  font-size: 4vw;
+  font-size: 3vw;
+}
+
+.works_row > img {
+  height: auto;
+  width: 18vw;
+  margin-left: 7vw;
+  z-index: -1;
 }
 
 #images_works {

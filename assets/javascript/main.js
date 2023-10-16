@@ -192,21 +192,23 @@ const Animation = {
       },
       xPercent: 50,
     });
-    tl.to("#work", {
+    tl.to("#png1", {
       scrollTrigger: {
-        trigger: "#about",
+        trigger: "#works",
         start: "top bottom",
-        scrub: 1,
+        scrub: 1.9,
       },
-      xPercent: 50,
+      xPercent: 100,
+      yPercent: 50
     });
+    
   },
 
   parallaxWorks() {
     tl.from(".cnt, .work_num", {
       y: (i, el) => 1 - parseFloat(el.getAttribute("data-speed")),
       scrollTrigger: {
-        trigger: "#works",
+        trigger: "#png1",
         start: "top bottom",
         scrub: 1.9,
       },
@@ -214,7 +216,7 @@ const Animation = {
     tl.from("cnt > img", {
       scale: 1.6,
       scrollTrigger: {
-        trigger: "#works",
+        trigger: "#png1",
         start: "top bottom",
         scrub: 1.9,
       },

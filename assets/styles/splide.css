@@ -8,7 +8,7 @@
   position: relative;
   overflow: hidden;
   top: 20vw;
-  height: 50vh;
+  padding-bottom: 5vw;
 }
 
 .splide {
