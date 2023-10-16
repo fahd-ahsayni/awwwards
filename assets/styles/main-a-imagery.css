@@ -88,21 +88,21 @@
 #about_right > .images:nth-child(1) {
   transform: translate(-40%, -8%) rotate(-20deg);
   z-index: 0;
-  background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+  background-image: url(https://ik.imagekit.io/fahdahsayni/arkx/abooutImage2.jpg?updatedAt=1697454071111);
   background-size: cover;
   background-position: center;
 }
 #about_right > .images:nth-child(2) {
   transform: translate(-15%, 0%) rotate(-15deg);
   z-index: 0;
-  background-image: url(https://images.unsplash.com/photo-1618052475596-a04aeafcb476?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80);
+  background-image: url(https://ik.imagekit.io/fahdahsayni/arkx/aboutImage1.jpg?updatedAt=1697454071276);
   background-size: cover;
   background-position: center;
 }
 #about_right > .images:nth-child(3) {
   transform: translate(20%, 10%) rotate(-5deg);
   z-index: 0;
-  background-image: url(https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80);
+  background-image: url(https://ik.imagekit.io/fahdahsayni/arkx/aboutIamge3.jpg?updatedAt=1697454071167);
   background-size: cover;
   background-position: center;
 }
